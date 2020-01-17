@@ -1,40 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lemoni's BLOG</title>
+</head>
+<body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<div id="wrap">
+    <header class="Bodoni">
+        <img src="./assets/img/logo.png" class="logo" alt="로고">  
+        <div class="gnb">
+            <ul>
+                <li class="nav-item" data-content="#about">
+                    <a href="#about">about</a>
+                </li>
+                <li class="nav-item" data-content="#vision">
+                    <a href="#vision">diary</a>
+                </li>
+                <li class="nav-item" data-content="#photos">
+                    <a href="#photos">photos</a>
+                </li>
+                <!-- <li class="nav-item" data-content="#">
+                    <a href="#">review</a>
+                </li> //추후 사용-->
+            </ul>
+        </div>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <section>
+        <div class="main-visual Bodoni">
+            <h2 class="title">LITTLE LEMONI</h2>
+            <!--
+            <img src="/sasec/web/assets/img/main.jpg" alt="">
+            -->
+            <div class="videoWrap">
+		    <iframe width="760" height="460" src="https://www.youtube.com/embed/KkvhzuhN_NA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </div>
+            <br>
+            <i class="material-icons">keyboard_arrow_down</i>
+            <p>Scroll Down</p>
+        </div>
+        <div id="about">
+            <div class="title">
+                <p class="BebasNeue">since 2019.12.20</p>
+                <h3 class="Bodoni">About 'LEMONI'</h3>
+            </div>
+            <div class="desc">
+                <span class="strong">“Rescue Cat”​</span>
+                <p>
+                    <br/>
+                NOVEMBER 30 - First found in box
+                    <br/>
+		DEC 19 - Staying at animal shelter for three weeks  
+                    <br/>
+		DEC 20 - Meet new family
+		</p>
+<!--                <a href = "https://m.store.naver.com/places/detail?id=1576361441" class="btn">예약하기</a>
+-->
+                <div class="imgbox">
+			<img src="./assets/img/1.jpg">
+                </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+            </div>
+        </div>
+        <div id="vision">
+            <h3 class="Bodoni">DIARY</h3>
+            <div class="desc">
+                <span class="strong">“19.12.20"​</span><br/>
+		좁은 케이지 안에 갇혀있던 레몬이를 처음 만난 날
+		<br/>
+                병원에 들려 기본적인 검사를 마치고 집으로 왔습니다.<br/><br/>
+                <span class="strong">"19.12.23"</span><br/>
+		갑작스레 시작된 구토<br/>
+		계속되는 음식 거부<br/>
+                항구토제를 맞고 버텨봅니다.
+		<br/><br/>
+                <span class="strong">“19.12.25"​</span><br/>
+		진정된줄 알았던 구토가 또 다시 시작되어<br/>
+		급하게 찾아간 병원에서 내린 진단명은<br/>
+		자궁축농증<br/>
+		당일 새벽 응급수술을 받게 됩니다.<br/><br/>
+                <span class="strong">“19.12.31"​</span><br/>
+		일주일간의 회복기간을 거쳐 드디어 퇴원<br/>
+		이제는 건강한 레몬이가 되었습니다.<br/><br/>
+
+            </div>
+        </div>
+        <div id="photos">
+            <div class="title">
+                <p class="BebasNeue">100% CUTIE CAT</p>
+                <h3 class="Bodoni">PHOTOS</h3>
+            </div>
+            <div class="desc">
+                    <ul>
+                        <li class="box">
+                            <div class="step">
+                                <span class="number">1</span>
+                                <div class="thumb">
+					<img src="./assets/img/2.jpg">
+				</div>
+				<p>귀여운 맹수<br/><br/>
+				낯가리는 시절 불편하게 앉아있는다.<br/>
+				진정한 맹수는 항상 긴장감을 풀지 않는다.<br/>
+				</p>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <div class="step">
+                                <span class="number">2</span>
+                                <div class="thumb thumb2">
+					<img src="./assets/img/3.jpg">
+				</div>
+				<p>야행성인 맹수에겐 불빛따윈 필요없다.<br/>
+				하지만 가끔씩은 분위기가 필요한 법.<br/>
+				작은 불빛 하나에 의지한채<br/>
+				인간들을 내려다본다.<br/>
+				</p>
+                            </di/pv>
+                        </li>
+                        <li class="box">
+                            <div class="step">
+                                <span class="number">3</span>
+                                <div class="thumb thumb3">	
+					<img src="./assets/img/4.jpg">
+				</div>
+				<p>
+				이제 어느정도 적응한 맹수<br/>
+				용맹한 자세로 사진 포즈를 취한다.<br/>
+				</p>
+			    
+			    </div>
+                        </li>
+                        <li class="box">
+                            <div class="step">
+                                <span class="number">4</span>
+                                <div class="thumb thumb4">
+					<img src="./assets/img/5.jpg">
+				</div>
+				<p>
+				완전 적응한 맹수는 어느덧<br/>
+				사냥실력을 유지하기 위해<br/>
+				발톱과 이빨을 사용한다.<br/>
+				</p>
+			    </div>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <p class="copyright">© LEMONI</p>
+    </footer>
+</div>
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--material google icon CSS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--material-design-iconic CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--my css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--my js-->
+    <script src="./assets/js/lib/jquery-1.12.2.min.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js"></script>
+    <meta name="naver-site-verification" content="43586e1103cabbc05effa5fa9ca61e1359e189e8"/>
+</body>
 </html>
+
+
