@@ -4,7 +4,7 @@ date 200117
 at backend dir
 $ pipenv install
 $ pipenv shell
-(backend) $ python manage.py runserver
+$ python manage.py runserver
 
 http://127.0.0.1:8000/api/v1/
 drf example
